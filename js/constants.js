@@ -1,0 +1,7 @@
+const CANVAS_WIDTH = 800;
+const CANVAS_HEIGHT = CANVAS_WIDTH / 2;
+const SQUARE_SIDE = CANVAS_WIDTH / 10;
+const UP_ARROW = 38;
+const DOWN_ARROW = 40;
+const LEFT_ARROW = 37;
+const RIGHT_ARROW = 39;

@@ -1,16 +1,14 @@
-let imgMouseRight1;
-let game = new Game();
+const game = new Game();
 
 function setup() {
-  createCanvas(900, 700);
-  game.setup();
+  let gameCanvas = createCanvas(CANVAS_WIDTH, CANVAS_HEIGHT);
+  gameCanvas.parent("canvas");
   console.log("setup");
 }
 
 function draw() {
-  //
+  game.draw();
 }
 
-function keyPressed() {
-  //
-}
+let scoreSpan = document.querySelector(".score");
+console.log(score.innerText);
