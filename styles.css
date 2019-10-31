@@ -7,7 +7,21 @@
 
 #canvas {
   display: flex;
-  margin-top: 100px;
+  flex-direction: row;
+  /* margin-top: 10px; */
   justify-content: center;
-  align-items: center;
+  /* margin-left: 250px; */
+}
+
+h1 {
+  display: flex;
+  height: 50px;
+  width: auto;
+  justify-content: center;
+  align-content: center;
+  font-family: monospace;
+}
+
+#defaultCanvas0 {
+  border: 3px black solid;
 }

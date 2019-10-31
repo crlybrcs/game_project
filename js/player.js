@@ -1,6 +1,7 @@
 let mouseRight = [];
 let mouseLeft = [];
 let counter1 = 0;
+
 // let counter2 = 0;
 
 class Player {
@@ -8,10 +9,11 @@ class Player {
     this.width = 150;
     this.height = 150;
     this.x = 460 - 150;
-    this.y = 400 - 97;
+    this.y = 406 - 94;
     this.direction = "right";
     this.velocity = 1;
-    // this.img;
+
+    //this.img;
   }
 
   setup() {}
@@ -44,22 +46,17 @@ class Player {
     };
 
     if (this.direction === "right") {
-      if (frameCount % 3 === 0) {
+      if (frameCount % 2 === 0) {
         counter1 = (counter1 + 1) % mouseRight.length;
       }
       this.img = mouseRight[counter1];
       image(this.img, this.x, this.y, this.width, this.height);
-
-      noFill();
-      rect(this.rect.x, this.rect.y, this.rect.width, this.rect.height);
     } else if (this.direction === "left") {
-      if (frameCount % 3 === 0) {
+      if (frameCount % 2 === 0) {
         counter1 = (counter1 + 1) % mouseLeft.length;
       }
       this.img = mouseLeft[counter1];
       image(this.img, this.x, this.y, this.width, this.height);
-      noFill();
-      rect(this.rect.x, this.rect.y, this.rect.width, this.rect.height);
     }
   }
 }

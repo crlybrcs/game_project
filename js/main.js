@@ -1,9 +1,14 @@
 const game = new Game();
 
+let song;
+let gameOver;
+
 function setup() {
   let gameCanvas = createCanvas(CANVAS_WIDTH, CANVAS_HEIGHT);
   gameCanvas.parent("canvas");
   console.log("setup");
+  // song.play();
+  // let slider = createSlider(0, 1, 0.1, 0.01);
 }
 
 function draw() {
@@ -12,3 +17,10 @@ function draw() {
 
 let scoreSpan = document.querySelector(".score");
 console.log(score.innerText);
+
+// function keyPressed() {
+//   if (keyCode === 32) {
+//     playing === false;
+//   }
+// }
+function award() {}

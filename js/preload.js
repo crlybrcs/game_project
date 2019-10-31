@@ -27,9 +27,20 @@ let grapes;
 let ham;
 let icecream;
 let tuna;
+let artichoke;
+let burrito;
+let cherry;
+let mushroom;
+let pancake;
+let pizza;
+let plum;
+let radish;
+let paw;
+let crystal;
 
 function preload() {
   kitchenBg = loadImage("../assets/kitchen.png");
+
   mouseRight.push(loadImage("../assets/mouse_right_e0000.png"));
   mouseRight.push(loadImage("../assets/mouse_right_e0001.png"));
   mouseRight.push(loadImage("../assets/mouse_right_e0002.png"));
@@ -63,6 +74,8 @@ function preload() {
   donut = loadImage("../assets/Donut.png");
   ham = loadImage("../assets/Ham_Border.png");
   icecream = loadImage("../assets/IceCream_Border.png");
+  pancake = loadImage("../assets/Pancake-Border.png");
+  pizza = loadImage("../assets/Pizza-Borde.png");
 
   tuna = loadImage("../assets/Tuna_Border.png");
   shrimp = loadImage("../assets/Shrimp_Border.png");
@@ -78,7 +91,16 @@ function preload() {
   carrot = loadImage("../assets/Carrot_Border.png");
   eggplant = loadImage("../assets/Eggplant-Border.png");
   grapes = loadImage("../assets/Grapes_Border.png");
+  artichoke = loadImage("../assets/Artichoke_Border.png");
+  burrito = loadImage("../assets/Burrito_Border.png");
+  cherry = loadImage("../assets/Cherry_Border.png");
+  mushroom = loadImage("../assets/Mushroom_Border.png");
+  plum = loadImage("../assets/Plum_Border.png");
+  radish = loadImage("../assets/Radish_Border.png");
 
-  soundFormats("wav");
-  mySound = loadSound("assets/Theme2Alt.wav");
+  paw = loadImage("../assets/resized_paw.png");
+  crystal = loadImage("../assets/crystal_01j.png");
+
+  // song = loadSound("Theme2Alt.wav");
+  // gameOver = loadSound("Fanfare.wav");
 }
