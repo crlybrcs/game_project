@@ -13,8 +13,9 @@ function keyPressed() {
   } else if (mode === 2) {
     fill("black");
     textSize(25);
+    background("white");
     textFont("monospace");
-    text("GAME OVER", 320, 200);
+    text("GAME OVER", 330, 220);
     // noLoop();
     // clear();
     // mode = 0;
@@ -130,7 +131,7 @@ class Game {
       // console.log(score);
 
       if (this.isPawCollision(this.player, this.paw)) {
-        console.log("oups");
+        console.log("paw grabs mouse");
         this.paw.collide = true;
       }
 
@@ -143,8 +144,6 @@ class Game {
       } else if (collisionCounter === 3) {
         mode = 2;
       }
-
-      // if (!testPierreFix.includes("oups")) testPierreFix.push("oups");
     }
   }
 
