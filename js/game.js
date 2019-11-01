@@ -38,7 +38,7 @@ class Game {
     if (mode === 0) {
       textSize(25);
       textFont("monospace");
-      text("Press SPACE to start", 260, 180);
+      text("Press SPACEBAR to start", 260, 180);
       textSize(18);
       text("try catching as more healthy food as you can!", 170, 270);
       text("use <- and -> to control the mouse", 225, 290);
